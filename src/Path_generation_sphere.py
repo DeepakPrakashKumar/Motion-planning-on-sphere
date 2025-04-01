@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 23 17:25:54 2022
-
-@author: deepa
-"""
-
 import numpy as np
 import math
 from math import cos as cos

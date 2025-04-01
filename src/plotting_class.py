@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Jan  5 10:17:19 2022
-
-@author: deepak
-"""
 
 import plotly.graph_objects as go
 import plotly.io as pio
