@@ -1,9 +1,3 @@
-"""
-mavsim_python
-    - Chapter 5 assignment for Beard & McLain, PUP, 2012
-    - Last Update:
-        2/5/2019 - RWB
-"""
 import numpy as np
 import matplotlib.pyplot as plt
 

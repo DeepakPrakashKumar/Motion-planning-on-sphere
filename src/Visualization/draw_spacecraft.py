@@ -1,11 +1,3 @@
-"""
-mavsim_python: drawing tools
-    - Beard & McLain, PUP, 2012
-    - Update history:
-        1/13/2021 - TWM
-        7/13/2023 - RWB
-        1/16/2024 - RWB
-"""
 import numpy as np
 import pyqtgraph.opengl as gl
 import os
