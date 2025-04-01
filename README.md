@@ -11,8 +11,6 @@ All the candidate optimal paths are constructed in the function 'Path_generation
 
 The paths can be visualized in a html file, which uses functions in the plotting_class.py file.
 
-The equations for construction of the path is attached in a pdf file in this repository.
-
 ## Numerical results for the paper
 
 Sample use of the optimal_path function in the Path_generation script is given in numerical_results_paper.ipynb, which contains the scenarios used to show optimality of CCpiC and CCCC paths. Furthermore, visualization of the path
