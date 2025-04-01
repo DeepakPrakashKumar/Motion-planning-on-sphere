@@ -17,6 +17,8 @@ Sample use of the optimal_path function in the Path_generation script is given i
 
 ## Visualization of the path
 
-Any path can be visualization using an animation as well. An example implementation is shown in example_paths_with_visualization.ipynb. Alternately, visualization can also be performed using plot_trajectory function in visualization_simulation.py function.
+Any path can be visualization using an animation as well. An example implementation is shown in example_paths_with_visualization.ipynb, whose output is shown at https://www.youtube.com/watch?v=hjuDgD-WeZk. Alternately, visualization can also be performed using plot_trajectory function in visualization_simulation.py function.
 
 For visualization, a majority of the scripts and the stl file (in Visualization folder) was taken from the mavsim_public repository (available at https://github.com/byu-magicc/mavsim_public?tab=readme-ov-file).
+
+DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited. AFRL-2025-0643; Cleared 05 Feb 2025.
