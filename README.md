@@ -34,5 +34,6 @@ If you use this work, please cite:
   journal = {arXiv preprint arXiv:2504.01215},
   year    = {2025}
 }
+```
 
 DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited. AFRL-2025-0643; Cleared 05 Feb 2025.
