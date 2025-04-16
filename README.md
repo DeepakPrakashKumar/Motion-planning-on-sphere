@@ -29,7 +29,7 @@ If you use this work, please cite:
 
 ```bibtex
 @article{deepak3D,
-  title   = {Time-Optimal Convexified Reeds-Shepp Paths on a Sphere},
+  title   = {A New Approach to Motion Planning in 3D for a Dubins Vehicle: Special Case on a Sphere},
   author  = {Kumar, Deepak Prakash and Darbha, Swaroop and Manyam, Satyanarayana Gupta and Casbeer, David},
   journal = {arXiv preprint arXiv:2504.01215},
   year    = {2025}
