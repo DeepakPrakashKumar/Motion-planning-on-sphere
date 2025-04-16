@@ -11,7 +11,7 @@ All the candidate optimal paths are constructed in the function 'Path_generation
 
 The paths can be visualized in a html file, which uses functions in the plotting_class.py file.
 
-The analytical construction of these paths will be provided in an arxiv paper soon!
+The analytical construction of these paths will be provided in the document titled "Generation of Paths for Motion Planning for a Dubins Vehicle on Sphere.pdf"!
 
 ## Numerical results for the paper
 
