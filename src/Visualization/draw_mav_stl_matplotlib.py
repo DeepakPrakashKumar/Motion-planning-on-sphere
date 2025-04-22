@@ -1,11 +1,3 @@
-"""
-mavsim_python: drawing tools
-    - Beard & McLain, PUP, 2012
-    - Update history:
-        4/15/2019 - BGM
-        7/13/2023 - RWB
-        1/16/2024 - RWB
-"""
 import numpy as np
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from stl import mesh

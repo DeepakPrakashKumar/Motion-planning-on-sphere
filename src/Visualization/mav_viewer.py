@@ -1,13 +1,3 @@
-"""
-mavsim_python: mav viewer (for chapter 2)
-    - Beard & McLain, PUP, 2012
-    - Update history:
-        1/15/2019 - RWB
-        4/15/2019 - BGM
-        3/31/2020 - RWB
-        7/13/2023 - RWB
-        3/25/2024 - Carson Moon
-"""
 # import pyqtgraph.opengl as gl
 # import pyqtgraph.Vector as Vector
 # from viewers.draw_mav import DrawMav

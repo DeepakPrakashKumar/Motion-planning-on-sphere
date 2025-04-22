@@ -1,12 +1,6 @@
 """
 msgState 
     - messages type for state, that will be passed between blocks in the architecture
-    
-part of mavPySim 
-    - Beard & McLain, PUP, 2012
-    - Update history:  
-        1/9/2019 - RWB
-        3/30/2022 - RWB
 """
 import numpy as np
 

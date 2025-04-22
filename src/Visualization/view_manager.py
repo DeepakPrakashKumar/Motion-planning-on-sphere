@@ -1,8 +1,5 @@
 """
 mavsim: manage_viewers
-    - Beard & McLain, PUP, 2012
-    - Update history:
-        3/11/2024 - RWB
 """
 # import pyqtgraph as pg
 from mav_viewer import MavViewer
