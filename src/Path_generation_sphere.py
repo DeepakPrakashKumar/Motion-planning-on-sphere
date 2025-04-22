@@ -1407,7 +1407,7 @@ def path_generation_CCCCC(ini_config, fin_config, r, R, path_type = 'lrlrl', tol
 
 def optimal_path_sphere(ini_config, fin_config, r, R, visualization = 1, filename = 'paths_sphere.html'):
     '''
-    In this function, the optimal three-segment path, i.e., of least length, is returned.
+    In this function, the optimal path, i.e., of least length, is returned.
     Furthermore, it is also visualized.
     
     Parameters
