@@ -13,6 +13,8 @@ The paths can be visualized in a html file, which uses functions in the plotting
 
 The analytical construction of these paths will be provided in the document titled "Generation of Paths for Motion Planning for a Dubins Vehicle on Sphere.pdf"!
 
+For CCCCC path construction, a cubic function needs to be solved; to this end, a cubic equation solver, given in https://github.com/shril/CubicEquationSolver, is used.
+
 ## Numerical results for the paper
 
 Sample use of the optimal_path function in the Path_generation script is given in numerical_results_paper.ipynb, which contains the scenarios used to show optimality of CCpiC and CCCC paths. Furthermore, visualization of the path
