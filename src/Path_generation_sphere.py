@@ -241,7 +241,24 @@ def points_path(ini_config, r, R, angle_segments, path_type = 'lgl'):
     
     return x_coords_path, y_coords_path, z_coords_path, fin_config_path, x_coords_circles,\
         y_coords_circles, z_coords_circles, Tx_path, Ty_path, Tz_path
+
+def computing_final_config(ini_config, r, R, angle_segments, path_type = 'lgl'):
+    # In this function, the final configuration for a given path is obtained
+
+    if len(angle_segments) < len(path_type):
         
+        raise Exception('Number of parameters of the path is lesser than the number '\
+                        + 'of segments of the path.')
+
+    # Storing the initial configuration before every segment
+    ini_config_seg = ini_config
+    
+    for i in range(len(path_type)):
+
+        ini_config_seg = operators_segments(ini_config_seg, angle_segments[i], r, R, path_type[i])
+
+    return ini_config_seg
+
 def modifying_initial_final_configurations_unit_sphere(ini_config, fin_config, R):
     '''
     In this function, the initial and final configuration is modified for the purpose
@@ -431,8 +448,7 @@ def path_generation_sphere_three_seg(ini_config, fin_config, r, R, path_type = '
             # Testing if the final configuration obtained from the C path is the
             # same as the desired final configuration
             # HERE, WE USE THE ORIGINAL PATH TYPE TO CHECK IF WE HAVE ATTAINED THE FINAL CONFIGURATION
-            fin_config_path =\
-                points_path(np.identity(3), r, 1, [phi1, phi2, phi3], path_type_ini)[3]
+            fin_config_path = computing_final_config(np.identity(3), r, 1, [phi1, phi2, phi3], path_type_ini)
                 
             # Checking if the minimum and maximum value in the difference in the final
             # configurations is small
@@ -656,8 +672,7 @@ def path_generation_sphere_three_seg(ini_config, fin_config, r, R, path_type = '
                         
                         # Obtaining the final configuration of the path
                         # HERE, WE USE THE INITIAL PATH TYPE AND THE ACTUAL FINAL CONFIGURATION WITHOUT REFLECTION TO CHECK
-                        fin_config_path =\
-                            points_path(np.identity(3), r_mod, 1, [phi1, phi2, phi3], path_type_ini)[3]
+                        fin_config_path = computing_final_config(np.identity(3), r_mod, 1, [phi1, phi2, phi3], path_type_ini)
                         
                         # print(fin_config_path)
                             
@@ -863,8 +878,7 @@ def path_generation_C_Cpi_C(ini_config, fin_config, r, R, path_type = 'lrl', tol
             for phi3 in phi3_array:
                 
                 # Obtaining the final configuration of the path
-                fin_config_path_construct =\
-                    points_path(np.identity(3), r_mod, 1, [phi1, math.pi, phi3], path_type)[3]
+                fin_config_path_construct = computing_final_config(np.identity(3), r_mod, 1, [phi1, math.pi, phi3], path_type)
                 
                 # print(fin_config_path_construct)
                     
@@ -903,8 +917,7 @@ def path_generation_C_Cpi_C(ini_config, fin_config, r, R, path_type = 'lrl', tol
             phi1 = np.mod(phi1phi3_diff, 2*math.pi); phi3 = 0
 
         # We check if the final configuration is attained
-        fin_config_path_construct =\
-                points_path(np.identity(3), r_mod, 1, [phi1, math.pi, phi3], path_type)[3]
+        fin_config_path_construct = computing_final_config(np.identity(3), r_mod, 1, [phi1, math.pi, phi3], path_type)
             
         # print(fin_config_path_construct)
             
@@ -1047,7 +1060,7 @@ def path_generation_CCCC(ini_config, fin_config, r, R, path_type = 'lrlr', tol_p
                 phi3 = 0
 
                 # We check if the final configuration is attained
-                fin_config_path_construct = points_path(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi3], path_type)[3]
+                fin_config_path_construct = computing_final_config(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi3], path_type)
 
                 if abs(max(map(max, fin_config_path_construct - fin_config_mod))) <= tol_path\
                     and abs(min(map(min, fin_config_path_construct - fin_config_mod))) <= tol_path:
@@ -1147,7 +1160,7 @@ def path_generation_CCCC(ini_config, fin_config, r, R, path_type = 'lrlr', tol_p
                 for phi3 in phi3_array:
 
                     # We check if the final configuration is attained
-                    fin_config_path_construct = points_path(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi3], path_type)[3]
+                    fin_config_path_construct = computing_final_config(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi3], path_type)
 
                     if abs(max(map(max, fin_config_path_construct - fin_config_mod))) <= tol_path\
                         and abs(min(map(min, fin_config_path_construct - fin_config_mod))) <= tol_path:
@@ -1289,7 +1302,7 @@ def path_generation_CCCCC(ini_config, fin_config, r, R, path_type = 'lrlrl', tol
                 phi3 = 0
 
                 # We check if the final configuration is attained
-                fin_config_path_construct = points_path(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi2, phi3], path_type)[3]
+                fin_config_path_construct = computing_final_config(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi2, phi3], path_type)
 
                 if abs(max(map(max, fin_config_path_construct - fin_config_mod))) <= tol_path\
                     and abs(min(map(min, fin_config_path_construct - fin_config_mod))) <= tol_path:
@@ -1390,7 +1403,7 @@ def path_generation_CCCCC(ini_config, fin_config, r, R, path_type = 'lrlrl', tol
                 for phi3 in phi3_array:
 
                     # We check if the final configuration is attained
-                    fin_config_path_construct = points_path(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi2, phi3], path_type)[3]
+                    fin_config_path_construct = computing_final_config(np.identity(3), r_mod, 1, [phi1, phi2, phi2, phi2, phi3], path_type)
 
                     if abs(max(map(max, fin_config_path_construct - fin_config_mod))) <= tol_path\
                         and abs(min(map(min, fin_config_path_construct - fin_config_mod))) <= tol_path:
