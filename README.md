@@ -9,7 +9,7 @@ The functions for path construction and obtaining configurations along the path 
 
 ## Candidate optimal paths
 
-The candidate optimal paths for the Dubins problem on a sphere are shown to be of type $CGC$, $CCC$, or a degenerate path for $r <= \frac{1}/{2}$. Here, $C = L, R$ denotes a left turn (as shown initially) or right turn of minimum turning radius $r$, and $G$ denotes a great circular arc. For $r <= \frac{1}{\sqrt{2}}$, $CCCC$ path is also optimal. Finally, for $r <= \frac{\sqrt{3}}{2}$, $CC_{\pi}C$ and $CCCCC$ paths are also optimal.
+The candidate optimal paths for the Dubins problem on a sphere are shown to be of type $CGC$, $CCC$, or a degenerate path for $r <= 1/2$. Here, $C = L, R$ denotes a left turn (as shown initially) or right turn of minimum turning radius $r$, and $G$ denotes a great circular arc. For $r <= \frac{1}{\sqrt{2}}$, $CCCC$ path is also optimal. Finally, for $r <= \frac{\sqrt{3}}{2}$, $CC_{\pi}C$ and $CCCCC$ paths are also optimal.
 
 ## Implementation of path
 
