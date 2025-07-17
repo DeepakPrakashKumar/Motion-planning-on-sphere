@@ -1,6 +1,6 @@
 # Motion-planning-on-sphere
 The code for motion planning for a Dubins vehicle moving on a sphere is provided, which is used as a part of the paper "A New Approach to Motion Planning in 3D for a Dubins Vehicle: Special Case on a Sphere". The vehicle considered is moving over a sphere, and has a minimum turning radius. The goal is to plan the optimal path to travel from one configuration to another. A representation of the minimum turning radius is shown below.
-[![Watch the video](https://img.youtube.com/vi/QjGT1Z2Bc0c/hqdefault.jpg)](https://www.youtube.com/watch?v=QjGT1Z2Bc0c)
+[![Watch the video](https://img.youtube.com/vi/-0TfJhciwR0/hqdefault.jpg)](https://www.youtube.com/watch?v=-0TfJhciwR0)
 
 The functions for path construction and obtaining configurations along the path are provided in Path_generation_sphere.py. The obtained path can also be visualized through an animation to obtain a path as shown below!
 [![Watch the video](https://img.youtube.com/vi/hjuDgD-WeZk/hqdefault.jpg)](https://www.youtube.com/watch?v=hjuDgD-WeZk)
