@@ -15,7 +15,7 @@ All the candidate optimal paths are constructed in the function 'Path_generation
 
 The paths can be visualized in a html file, which uses functions in the plotting_class.py file.
 
-The analytical construction of these paths will be provided in the document titled "Generation of Paths for Motion Planning for a Dubins Vehicle on Sphere.pdf"!
+The analytical construction of these paths is provided in another document on Arxiv, which is available at [https://arxiv.org/abs/2504.11832](https://arxiv.org/abs/2504.11832).
 
 For CCCCC path construction, a cubic function needs to be solved; to this end, a cubic equation solver, given in https://github.com/shril/CubicEquationSolver, is used.
 
@@ -25,7 +25,7 @@ Sample use of the optimal_path function in the Path_generation script is given i
 
 ## Visualization of the path
 
-Any path can be visualization using an animation as well. An example implementation is shown in example_paths_with_visualization.ipynb, whose output is shown at https://www.youtube.com/watch?v=hjuDgD-WeZk. Alternately, visualization can also be performed using plot_trajectory function in visualization_simulation.py function.
+Any path can be visualization using an animation as well. An example implementation is shown in example_paths_with_visualization.ipynb, whose output was previously shown. Alternately, visualization can also be performed using plot_trajectory function in visualization_simulation.py function.
 
 For visualization, a majority of the scripts and the stl file (in Visualization folder) was taken from the mavsim_public repository (available at https://github.com/byu-magicc/mavsim_public?tab=readme-ov-file).
 
