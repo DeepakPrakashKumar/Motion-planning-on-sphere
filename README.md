@@ -1,9 +1,13 @@
 # Motion-planning-on-sphere
-The code for motion planning for a Dubins vehicle moving on a sphere is provided, which is used as a part of the paper "A New Approach to Motion Planning in 3D for a Dubins Vehicle: Special Case on a Sphere". The functions for path construction and obtaining configurations along the path are provided in Path_generation_sphere.py.
+The code for motion planning for a Dubins vehicle moving on a sphere is provided, which is used as a part of the paper "A New Approach to Motion Planning in 3D for a Dubins Vehicle: Special Case on a Sphere". The vehicle considered is moving over a sphere, and has a minimum turning radius. The goal is to plan the optimal path to travel from one configuration to another. A representation of the minimum turning radius is shown below.
+[![Watch the video](https://img.youtube.com/vi/QjGT1Z2Bc0c/hqdefault.jpg)](https://www.youtube.com/watch?v=QjGT1Z2Bc0c)
+
+The functions for path construction and obtaining configurations along the path are provided in Path_generation_sphere.py. The obtained path can also be visualized through an animation to obtain a path as shown below!
+[![Watch the video](https://img.youtube.com/vi/hjuDgD-WeZk/hqdefault.jpg)](https://www.youtube.com/watch?v=hjuDgD-WeZk)
 
 ## Candidate optimal paths
 
-The candidate optimal paths for the Dubins problem on a sphere are shown to be of type CGC, CCC, or a degenerate path for r <= 1/2. For r <= 1/sqrt(2), CCCC path is also optimal. Finally, for r <= sqrt(3)/2, CCpiC and CCCCC paths are also optimal.
+The candidate optimal paths for the Dubins problem on a sphere are shown to be of type CGC, CCC, or a degenerate path for r <= 1/2. Here, C = L, R denotes a left turn (as shown initially) or right turn of minimum turning radius, and G denotes a great circular arc. For r <= 1/sqrt(2), CCCC path is also optimal. Finally, for r <= sqrt(3)/2, CCpiC and CCCCC paths are also optimal.
 
 ## Implementation of path
 
@@ -17,7 +21,7 @@ For CCCCC path construction, a cubic function needs to be solved; to this end, a
 
 ## Numerical results for the paper
 
-Sample use of the optimal_path function in the Path_generation script is given in numerical_results_paper.ipynb, which contains the scenarios used to show optimality of CCpiC and CCCC paths. Furthermore, visualization of the path
+Sample use of the optimal_path function in the Path_generation script is given in numerical_results_paper.ipynb, which contains the scenarios used to show optimality of CCpiC and CCCC paths.
 
 ## Visualization of the path
 
