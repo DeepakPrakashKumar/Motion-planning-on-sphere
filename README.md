@@ -7,6 +7,18 @@ The functions for path construction and obtaining configurations along the path 
 
 [![Watch the video](https://img.youtube.com/vi/hjuDgD-WeZk/hqdefault.jpg)](https://www.youtube.com/watch?v=hjuDgD-WeZk)
 
+## Primitive segments
+
+The optimal paths for the motion planning problem on the sphere for the Dubins vehicle are composed of three primitive segments: a left turn $L$ of minimum turning radius $r$, a right turn $R$ of minimum turning radius $r$, or a great circular arc $G$. These segments are illustrated below.
+
+<table>
+  <tr>
+    <td align="center"><b>Left turn (<i>L</i>)</b><br><img src="src/GIFs for paths/trajectory_left_0_4.gif"/></td>
+    <td align="center"><b>Right turn (<i>R</i>)</b><br><img src="src/GIFs for paths/traj_right_0_4.gif"/></td>
+    <td align="center"><b>Great circular arc (<i>G</i>)</b><br><img src="src/GIFs for paths/trajectory_g.gif"/></td>
+  </tr>
+</table>
+
 ## Candidate optimal paths
 
 The candidate optimal paths for the Dubins problem on a sphere are shown to be of type $CGC$, $CCC$, or a degenerate path for $r <= \frac{1}{2}$. Here, $C = L, R$ denotes a left turn (as shown initially) or right turn of minimum turning radius $r$, and $G$ denotes a great circular arc. For $r <= \frac{1}{\sqrt{2}}$, $CCCC$ path is also optimal. Finally, for $r <= \frac{\sqrt{3}}{2}$, $CC_{\pi}C$ and $CCCCC$ paths are also optimal.
