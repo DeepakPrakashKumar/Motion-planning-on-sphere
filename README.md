@@ -1,4 +1,4 @@
-# Motion-planning-on-sphere
+# Motion planning for Dubins vehicle on sphere
 The code for motion planning for a Dubins vehicle moving on a sphere is provided, which is used as a part of the paper "A New Approach to Motion Planning in 3D for a Dubins Vehicle: Special Case on a Sphere". The paper is available at https://arxiv.org/abs/2504.01215. The vehicle considered is moving over a sphere, and has a minimum turning radius. The goal is to plan the optimal path to travel from one configuration to another. 
 
 <!-- A representation of the minimum turning radius is shown below. -->
