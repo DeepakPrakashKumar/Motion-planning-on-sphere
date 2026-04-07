@@ -57,12 +57,12 @@ For $r \leq \frac{\sqrt{3}}{2}$, in addition to the paths above, the $CC_{\pi}C$
 
 <table>
   <tr>
-    <td align="center"><b>$LRL$ ($CC_{\pi}C$)</b><br><img src="src/GIFs for paths/lrl_path_r_0_71_angles_0_7rad_pi_rad_0_7rad.gif"/></td>
-    <td align="center"><b>$RLR$ ($CC_{\pi}C$)</b><br><img src="src/GIFs for paths/rlr_path_r_0_71_angles_0_7rad_pi_rad_0_7rad.gif"/></td>
+    <td align="center"><b>LRL (CC<sub>π</sub>C)</b><br><img src="src/GIFs for paths/lrl_path_r_0_71_angles_0_7rad_pi_rad_0_7rad.gif"/></td>
+    <td align="center"><b>RLR (CC<sub>π</sub>C)</b><br><img src="src/GIFs for paths/rlr_path_r_0_71_angles_0_7rad_pi_rad_0_7rad.gif"/></td>
   </tr>
   <tr>
-    <td align="center"><b>$CCCCC$ (RLR to RLRL transition)</b><br><img src="src/GIFs for paths/ccc_to_cccc_transition_rlr_r_0_79.gif"/></td>
-    <td align="center"><b>$CCCCC$ (RLRL transition)</b><br><img src="src/GIFs for paths/ccc_to_cccc_transition_rlrl_r_0_8.gif"/></td>
+    <td align="center"><b>CCCCC (RLR to RLRL transition)</b><br><img src="src/GIFs for paths/ccc_to_cccc_transition_rlr_r_0_79.gif"/></td>
+    <td align="center"><b>CCCCC (RLRL transition)</b><br><img src="src/GIFs for paths/ccc_to_cccc_transition_rlrl_r_0_8.gif"/></td>
   </tr>
 </table>
 
