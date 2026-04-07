@@ -9,7 +9,7 @@ The functions for path construction and obtaining configurations along the path 
 
 ## Primitive segments
 
-The optimal paths for the motion planning problem on the sphere for the Dubins vehicle are composed of three primitive segments: a left turn $L$ of minimum turning radius $r$, a right turn $R$ of minimum turning radius $r$, or a great circular arc $G$. These segments are illustrated below.
+The optimal paths for the motion planning problem on the sphere for the Dubins vehicle are composed of three primitive (optimal) segments: a left turn $L$ of minimum turning radius $r$, a right turn $R$ of minimum turning radius $r$, or a great circular arc $G$. These segments are illustrated below.
 
 <table>
   <tr>
@@ -21,7 +21,50 @@ The optimal paths for the motion planning problem on the sphere for the Dubins v
 
 ## Candidate optimal paths
 
-The candidate optimal paths for the Dubins problem on a sphere are shown to be of type $CGC$, $CCC$, or a degenerate path for $r <= \frac{1}{2}$. Here, $C = L, R$ denotes a left turn (as shown initially) or right turn of minimum turning radius $r$, and $G$ denotes a great circular arc. For $r <= \frac{1}{\sqrt{2}}$, $CCCC$ path is also optimal. Finally, for $r <= \frac{\sqrt{3}}{2}$, $CC_{\pi}C$ and $CCCCC$ paths are also optimal.
+Here, $C = L, R$ denotes a left or right turn of minimum turning radius $r$, and $G$ denotes a great circular arc.
+
+### $r \leq \frac{1}{2}$
+
+The candidate optimal paths are of type $CGC$ ($LGL$, $LGR$, $RGL$, $RGR$) or $CCC$ ($LRL$, $RLR$), or a degenerate path.
+
+<table>
+  <tr>
+    <td align="center"><b>LGL</b><br><img src="src/GIFs for paths/lgl_path_r_0_4_angles_1_2rad_0_6rad_1_4rad.gif"/></td>
+    <td align="center"><b>LGR</b><br><img src="src/GIFs for paths/lgr_path_r_0_4_angles_1_2rad_0_6rad_1_4rad.gif"/></td>
+    <td align="center"><b>RGL</b><br><img src="src/GIFs for paths/rgl_path_r_0_4_angles_1_2rad_0_6rad_1_4rad.gif"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>RGR</b><br><img src="src/GIFs for paths/rgr_path_r_0_4_angles_1_2rad_0_6rad_1_4rad.gif"/></td>
+    <td align="center"><b>LRL</b><br><img src="src/GIFs for paths/lrl_path_r_0_4_angles_1_5rad_3pi_by2rad_1_4rad.gif"/></td>
+    <td align="center"><b>RLR</b><br><img src="src/GIFs for paths/rlr_path_r_0_4_angles_1_5rad_3pi_by2rad_1_4rad.gif"/></td>
+  </tr>
+</table>
+
+### $r \leq \frac{1}{\sqrt{2}}$
+
+In addition to the paths above, the $CCCC$ path ($LRLR$, $RLRL$) is also a candidate optimal path.
+
+<table>
+  <tr>
+    <td align="center"><b>LRLR</b><br><img src="src/GIFs for paths/traj_lrlr_0_55_0_35_rad_3_54575rad.gif"/></td>
+    <td align="center"><b>RLRL</b><br><img src="src/GIFs for paths/traj_rlrl_0_55_0_35_rad_3_54575rad.gif"/></td>
+  </tr>
+</table>
+
+### $r \leq \frac{\sqrt{3}}{2}$
+
+In addition to the paths above, the $CC_{\pi}C$ ($LRL$ and $RLR$ with the middle segment subtending angle $\pi$) and $CCCCC$ paths are also candidate optimal paths.
+
+<table>
+  <tr>
+    <td align="center"><b>$LRL$ ($CC_{\pi}C$)</b><br><img src="src/GIFs for paths/lrl_path_r_0_71_angles_0_7rad_pi_rad_0_7rad.gif"/></td>
+    <td align="center"><b>$RLR$ ($CC_{\pi}C$)</b><br><img src="src/GIFs for paths/rlr_path_r_0_71_angles_0_7rad_pi_rad_0_7rad.gif"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>$CCCCC$ (RLR to RLRL transition)</b><br><img src="src/GIFs for paths/ccc_to_cccc_transition_rlr_r_0_79.gif"/></td>
+    <td align="center"><b>$CCCCC$ (RLRL transition)</b><br><img src="src/GIFs for paths/ccc_to_cccc_transition_rlrl_r_0_8.gif"/></td>
+  </tr>
+</table>
 
 ## Implementation of path
 
