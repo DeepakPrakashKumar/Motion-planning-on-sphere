@@ -21,11 +21,11 @@ The optimal paths for the motion planning problem on the sphere for the Dubins v
 
 ## Candidate optimal paths
 
-Here, $C = L, R$ denotes a left or right turn of minimum turning radius $r$, and $G$ denotes a great circular arc.
+Let $C = L, R$ denotes a left or right turn of minimum turning radius $r$, and $G$ denotes a great circular arc. The key result of this paper is show that the candidate optimal paths changes with changing $r$. The result depends on whether $r$ is such that (i) $r \leq \frac{1}{2}$, (ii) $r \leq \frac{1}{\sqrt{2}}$, or (iii) $r \leq \frac{\sqrt{3}}{2}$.
 
-### $r \leq \frac{1}{2}$
+### Case $r \leq \frac{1}{2}$
 
-The candidate optimal paths are of type $CGC$ ($LGL$, $LGR$, $RGL$, $RGR$) or $CCC$ ($LRL$, $RLR$), or a degenerate path.
+The candidate optimal paths for $r \leq \frac{1}{2}$ is of type $CGC$ ($LGL$, $LGR$, $RGL$, $RGR$) or $CCC$ ($LRL$, $RLR$), or a degenerate path of the same.
 
 <table>
   <tr>
@@ -40,9 +40,9 @@ The candidate optimal paths are of type $CGC$ ($LGL$, $LGR$, $RGL$, $RGR$) or $C
   </tr>
 </table>
 
-### $r \leq \frac{1}{\sqrt{2}}$
+### Case $r \leq \frac{1}{\sqrt{2}}$
 
-In addition to the paths above, the $CCCC$ path ($LRLR$, $RLRL$) is also a candidate optimal path.
+For $r \leq \frac{1}{\sqrt{2}}$, the previous candidate optimal paths are optimal. However, in addition to the $CGC$ and $CCC$ paths, the $CCCC$ path ($LRLR$, $RLRL$) is also a candidate optimal path.
 
 <table>
   <tr>
@@ -51,9 +51,9 @@ In addition to the paths above, the $CCCC$ path ($LRLR$, $RLRL$) is also a candi
   </tr>
 </table>
 
-### $r \leq \frac{\sqrt{3}}{2}$
+### Case $r \leq \frac{\sqrt{3}}{2}$
 
-In addition to the paths above, the $CC_{\pi}C$ ($LRL$ and $RLR$ with the middle segment subtending angle $\pi$) and $CCCCC$ paths are also candidate optimal paths.
+For $r \leq \frac{\sqrt{3}}{2}$, in addition to the paths above, the $CC_{\pi}C$ ($LRL$ and $RLR$ with the middle segment subtending angle $\pi$) and $CCCCC$ paths are candidate optimal paths.
 
 <table>
   <tr>
