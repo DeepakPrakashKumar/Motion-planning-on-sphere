@@ -104,7 +104,7 @@ A $L_{\pi}R_{\pi + \beta} L_{\pi}$ path is shown to be non-optimal for $r \leq \
 
 ### Lemma 10
 
-A $L_{\pi}R_{\pi + \beta} L_{\pi + \beta} R_{\pi}$ path is shown to be non-optimal for $r \leq \frac{1}{\sqrt{2}}$ by constructing a shorter $LRLR$ ($CCCC$) alternate path connecting the same initial and final configurations. This construction is used to show that a $R_\alpha L_{\pi + \beta} R_{\pi + \beta} L_{\pi + \beta} R_{\pi + \beta} L_\gamma$ path is non-optimal.
+A $L_{\pi}R_{\pi + \beta} L_{\pi + \beta} R_{\pi}$ path is shown to be non-optimal for $r \leq \frac{\sqrt{3}}{2}$ by constructing a shorter $LRLR$ ($CCCC$) alternate path connecting the same initial and final configurations. This construction is used to show that a $R_\alpha L_{\pi + \beta} R_{\pi + \beta} L_{\pi + \beta} R_{\pi + \beta} L_\gamma$ path is non-optimal.
 
 <table>
   <tr>
