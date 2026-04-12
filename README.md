@@ -65,6 +65,54 @@ For $r \leq \frac{\sqrt{3}}{2}$, in addition to the paths above, the $CC_{\pi}C$
 
 > **Remark:** Though $CCCCC$ is a candidate optimal path, we were unable to find an initial and final configuration for which a $CCCCC$ path was indeed optimal. Such a path could potentially be non-optimal, and may be removable from the candidate set. However, since we are currently unable to prove non-optimality of CCCCC, it remains to be in the candidate optimal list. The reader is referred to the paper for a more detailed discussion.
 
+## Construction of alternate paths for non-optimality proofs
+
+The paper establishes non-optimality of certain path types by constructing, for each candidate path, an alternate path of strictly shorter length over the relevant range of turning radius $r$. There are four key lemmas to this end, each showing that a specific path structure is non-optimal by constructing a shorter alternate path. The animations below show the vehicle traversing the original path and the corresponding shorter alternate path side by side for each lemma.
+
+### Lemma 3
+
+A $LR_{\pi}L$ path (a $CCC$ path where the middle $R$ segment subtends angle $\pi$) is shown to be non-optimal for $r \leq \frac{1}{\sqrt{2}}$ by constructing a shorter $GRG$ ($CGC$) alternate path connecting the same initial and final configurations.
+
+<table>
+  <tr>
+    <td align="center"><b>Original path (LR<sub>π</sub>L)</b><br><img src="src/GIFs for paths/lemma_3_original_lrpil_path.gif"/></td>
+    <td align="center"><b>Alternate path (GRG)</b><br><img src="src/GIFs for paths/lemma_3_alternate_grg_path.gif"/></td>
+  </tr>
+</table>
+
+### Lemma 4
+
+A $LR_{\pi}L_{\pi}R$ path (a $CCCCC$-type path with two segments subtending angle $\pi$) is shown to be non-optimal for $r \leq \frac{\sqrt{3}}{2}$ by constructing a shorter $RGL$ ($CGC$) alternate path connecting the same initial and final configurations.
+
+<table>
+  <tr>
+    <td align="center"><b>Original path (LR<sub>π</sub>L<sub>π</sub>R)</b><br><img src="src/GIFs for paths/lemma_4_original_lrpilpir_path.gif"/></td>
+    <td align="center"><b>Alternate path (RGL)</b><br><img src="src/GIFs for paths/lemma_4_alternate_rgl_path.gif"/></td>
+  </tr>
+</table>
+
+### Lemma 9
+
+A $L_{\pi}R_{\pi + \beta} L_{\pi}$ path (a $CC_{\pi}C$-type path) is shown to be non-optimal for $r \leq \frac{1}{\sqrt{2}}$ by constructing a shorter $LRL$ ($CCC$) alternate path connecting the same initial and final configurations. This construction is used to show that a $R_\alpha L_{\pi + \beta} R_{\pi + \beta} L_{\pi + \beta} R_\gamma$ path is non-optimal.
+
+<table>
+  <tr>
+    <td align="center"><b>Original path (L<sub>π</sub>R<sub>π + β</sub>L<sub>π</sub>)</b><br><img src="src/GIFs for paths/lemma_9_original_lpirpibetalpi_path.gif"/></td>
+    <td align="center"><b>Alternate path (LRL)</b><br><img src="src/GIFs for paths/lemma_9_alternate_lrl_path.gif"/></td>
+  </tr>
+</table>
+
+### Lemma 10
+
+A $L_{\pi}R_{\pi + \beta} L_{\pi + \beta} R_{\pi}$ path is shown to be non-optimal for $r \leq \frac{1}{\sqrt{2}}$ by constructing a shorter $LRLR$ ($CCCC$) alternate path connecting the same initial and final configurations. This construction is used to show that a $R_\alpha L_{\pi + \beta} R_{\pi + \beta} L_{\pi + \beta} R_{\pi + \beta} L_\gamma$ path is non-optimal.
+
+<table>
+  <tr>
+    <td align="center"><b>Original path (L<sub>π</sub>R<sub>π + β</sub>L<sub>π + β</sub>R<sub>π</sub>)</b><br><img src="src/GIFs for paths/lemma_10_original_lpirpibetalpibetarpi_path.gif"/></td>
+    <td align="center"><b>Alternate path (LRLR)</b><br><img src="src/GIFs for paths/lemma_10_alternate_lrlr_path.gif"/></td>
+  </tr>
+</table>
+
 ## Implementation of path
 
 All the candidate optimal paths are constructed in the function 'Path_generation_sphere.py'. The function optimal_path_sphere.py runs through all candidate paths (depending on the turning radius) and returns the optimal path. Note that in this function, the radius of the sphere need not necessarily be one; arbitrary sphere sizes can be passed. The configurations are scaled such that the path construction is performed on a unit sphere, and the final path is scaled back up to return the optimal path on the original sphere.
